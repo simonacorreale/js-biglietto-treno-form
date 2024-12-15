@@ -13,30 +13,10 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ticket To Ride</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+            <div class="me-class-logo">
+                <img src="./img/logo.svg" width="40px" alt="logo ticket to ride" class="me-space-b">
+                <a class="navbar-brand" href="#">Ticket To Ride</a>
             </div>
-        </div>
     </nav>
     <main>
         <div class="container mt-5">
@@ -55,16 +35,24 @@
                         per gli over 64 </h6>
                 </div>
 
-                <form class="row g-3">
+                <form class="row g-3" method="get">
                     <h5>Acquista il ticket per la tua destinazione ♥ </h5>
                     <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Inesrisci i chilometri 🚅</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <label for="distance-km" class="form-label">Inesrisci i chilometri 🚅</label>
+                        <input type="number" class="form-control" id="istance-km">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Inserisci la tua età 👵🏻👩🏻</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <label for="user-age" class="form-label">Inserisci la tua età 👵🏻👩🏻</label>
+                        <input type="number" class="form-control" id="user-age">
                     </div>
+
+                    <div class="col me-cont-style-summary mt-4">
+                        <div class="me-class-results mt-4">
+                            <h5> Prezzo stimato</h5>
+                            <p class="me-class-pricing"> 400$</p>
+                        </div>
+                    </div>
+
                     <div class="col-12 mt-5">
                         <button type="submit" class="btn btn-primary">Calcola prezzo</button>
                     </div>
@@ -73,7 +61,7 @@
     </main>
 
 
-
+    <script type="text/javascript" src="./sript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

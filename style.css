@@ -12,10 +12,34 @@
     display: flex;
     align-items: center;
 }
+.me-class-logo {
+    display: flex;
+    padding: 10px;
+}
+.me-space-b{
+    margin-right: 12px;
+}
 .me-class-img-winter{
     padding-bottom: 5px;
 }
 .me-class-diclaimer {
     font-size: 11px;
     font-style: normal;
+}
+
+.me-cont-style-summary {
+
+    border-top: solid 0.2px aliceblue;
+}
+.me-class-pricing{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.me-class-results{
+    background-color: rgba(127, 255, 212, 0.257);
+    padding: 20px;
+    display: flex; 
+    align-items: center;
+    width: 280px;
+    border-radius: 8px;
 }
