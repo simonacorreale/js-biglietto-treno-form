@@ -38,15 +38,14 @@
 }
 
 .me-class-pricing {
-    font-size: 30px;
-    margin-left: 20px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .me-class-results {
     background-color: rgba(127, 255, 212, 0.257);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    width: 300px;
+    padding: 10px;
+    width: 250px;
     border-radius: 8px;
 }

@@ -3,8 +3,7 @@ console.log(submitButton);
 const distanceInput = document.querySelector('#distance-km');
 const ageInput = document.querySelector('#user-age');
 const resultMessage = document.querySelector('#final-results');
-distanceInput.value = 0
-ageInput.value = 0
+
 
 // inizio funzione click
 submitButton.addEventListener('click', function (event) {
@@ -48,7 +47,7 @@ submitButton.addEventListener('click', function (event) {
         resultMessage.innerHTML = `${finalPrice}`;
 
         if (isNaN(finalPrice)) {
-            resultMessage.innerHTML = "nessun prezzo stimato";
+            resultMessage.innerHTML = "Nessun prezzo stimato";
         }
         console.log("loaderTimer")
     }, "1000");
