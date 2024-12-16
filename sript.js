@@ -38,6 +38,8 @@ submitButton.addEventListener('click', function (event) {
 
     const finalPrice = totalPrice.toFixed(2);
 
+    // Counter
+
     setTimeout(() => {
 
         spinnerEl.classList.add('d-none')
