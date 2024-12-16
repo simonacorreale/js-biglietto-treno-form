@@ -39,23 +39,30 @@
                     <h5>Acquista il ticket per la tua destinazione ♥ </h5>
                     <div class="col-md-6">
                         <label for="distance-km" class="form-label">Inesrisci i chilometri 🚅</label>
-                        <input type="number" class="form-control" id="istance-km">
+                        <input type="number" class="form-control" id="distance-km" required>
                     </div>
                     <div class="col-md-6">
                         <label for="user-age" class="form-label">Inserisci la tua età 👵🏻👩🏻</label>
-                        <input type="number" class="form-control" id="user-age">
+                        <input type="number" class="form-control" id="user-age" required>
                     </div>
 
                     <div class="col me-cont-style-summary mt-4">
                         <div class="me-class-results mt-4">
                             <h5> Prezzo stimato</h5>
-                            <p class="me-class-pricing"> 400$</p>
+                            <p class="me-class-pricing" id="final-results"> 00,00$</p>
                         </div>
                     </div>
 
-                    <div class="col-12 mt-5">
-                        <button type="submit" class="btn btn-primary">Calcola prezzo</button>
-                    </div>
+                    <button id="action" class="btn btn-primary" type="submit">
+                        <span id="spinner" class="d-none spinner-border spinner-border-sm" aria-hidden="true"></span>
+                        <span  class="status" role="status">Calcola prezzo</span>
+                    </button>
+
+                   <!-- <button class="btn btn-primary" type="submit">
+                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                        <span class="status" role="status">Loading...</span>
+                      </button> --> 
+
                 </form>
             </div>
     </main>
